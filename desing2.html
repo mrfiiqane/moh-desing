@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root{
+            --primary-color: #FF7D29;
+            --secondary-color: #7B4019;
+            --thirty-color: #3d00e6;
+            --accent-color: #FFEEA9;
+            --background-color: #fdfdfd;
+            --text-black: black;
+            --text-white: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color:var(--background-color);
+        }
+        .card-container{
+            border-radius: 40px;
+            border: 3px solid rgb(0,0,0,0.2);
+            background-color: rgb(255, 255, 255);
+            margin: 2rem;
+       
+        }
+        .flex-card{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem auto;
+            padding: 4rem 3rem;
+            border: 8px;
+            gap: 10rem;
+            
+        }
+        .logo-icons1{
+            position: absolute;
+            top: 120px;
+            left: 380px;
+            width: 50px;
+            height: 50px;
+        }
+        .logo-icons2{
+            position: absolute;
+            top: 120px;
+            left: 940px;
+            width: 50px;
+            height: 50px;
+        }
+        .logo-icons3{
+            position: absolute;
+            top: 120px;
+            left: 1450px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .service-name{
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .service-name .log1{
+            width: 50px;
+            height: 50px;
+    
+        }
+        .service-name .log2{
+            width: 50px;
+            height: 50px;
+          
+          
+        }
+        .service-name .log3{
+            width: 50px;
+            height: 50px;
+         
+        
+        }
+        
+        .service-name img{
+            margin-right: 30px;
+        }
+        .service-name h2{
+            margin-right: 30px;
+        }
+        
+     
+        .card-content-1 h1{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2.2rem;
+            color: var(--text-black);
+            
+        }
+        .card-content-2 h1{
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2.2rem;
+            color: var(--text-black);
+        }
+        .card-content-3 h1{
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2.2rem;
+            color: var(--text-black);
+        }
+        .card-content-1 img{
+            max-height: 100%;
+	        max-width: 100%;
+            width: 200px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            margin: 0 4rem;
+
+        }
+        .card-content-2 img{
+            max-height: 100%;
+	        max-width: 100%;
+            width: 200px;
+            height: 200px;
+            margin: 0 4rem;
+
+        }
+        .card-content-3 img{
+            max-height: 100%;
+	        max-width: 100%;
+            width: 200px;
+            height: 200px;
+            margin: 0 4rem;
+           
+
+        }
+        .card-content-1 h2{
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            color: #3d00e6;
+            margin-bottom: 1rem;
+            text-decoration: underline;
+        }
+        .card-content-2 h2{
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            color: #3d00e6;
+            margin-bottom: 1rem;
+            text-decoration: underline;
+                    
+        }
+        .card-content-3 h2{
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            color: #3d00e6;
+            margin-bottom: 1rem;
+            text-decoration: underline;
+        }
+        .card-content-1 p{
+            text-align: center;
+            font-family:sans-serif;
+            font-size: 18px;
+            color: var(--text-black);
+        }
+        .card-content-2 p{
+            text-align: center;
+            font-family:sans-serif;
+            font-size: 18px;
+            color: var(--text-black);
+        }
+        .card-content-3 p{
+            text-align: center;
+            font-family:sans-serif;
+            font-size: 18px;
+            color: var(--text-black);
+        }
+        .read-more{
+            text-decoration: none;
+            border: none;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+            color: var(--text-black);
+            padding: .8rem 1rem;
+            margin: 1rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .view-project{
+            border: 8px;
+            font-size: 14px;
+            border-radius: 8px;
+            padding: .8rem 1rem;
+            margin: 1rem 1rem;
+            color: var(--text-white);
+            background-color: var(--secondary-color);
+            cursor: pointer;
+        }
+        .vertical-line1{
+            position: absolute;
+            top: 200px;
+            left: 650px;
+            width: 4px;
+            height: 40%;
+            background-color: yellowgreen;
+        }
+        .vertical-line2{
+            position: absolute;
+            top: 200px;
+            right: 650px;
+            width: 4px;
+            height: 40%;
+            background-color: yellowgreen;
+        }
+        .text-container{
+            margin: 1rem 1rem;
+            width: auto;
+            height: 600px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .flex-text-box{
+            display: inline-flex;
+            flex-direction: row;
+            padding: 2rem 2rem;
+        }
+        .flex-text-box .text-content{
+            margin-right: 4rem;
+            
+        }
+        
+        .text-content h1{
+            font-size: 3.5rem;
+            text-align: start;
+            color: var(--text-black);
+            margin-top: 2rem;
+            font-family:'Courier New', Courier, monospace;
+
+        }
+        .text-content h2{
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: .5rem;
+            font-family:Arial, Helvetica, sans-serif;
+
+        }
+        .text-content p{
+            text-align: center;
+            font-size: 1rem;
+            font-family:Arial, Helvetica, sans-serif;
+            width: 500px;
+
+        }
+        .horizontal-line{
+            width: auto;
+            height: 5px;
+            background-color: black;
+            margin-bottom: 1rem;
+           
+        }
+        .read-more1{
+            display: block;
+            text-decoration: none;
+            border: none;
+            font-size: 14px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 2rem 1rem;
+            
+            
+        }
+        .news1{
+            display: inline-block;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 2rem;
+            margin-right: 2rem;
+            color: var(--text-white);
+            background-color: var(--secondary-color);
+            padding: .8rem 1rem;
+            cursor: pointer;
+        
+        }
+        .news2{
+            display: inline-block;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 2rem;
+            margin-right: 15rem;
+            color: var(--text-black);
+            padding: .8rem 1rem;
+            cursor: pointer;
+        
+        }
+        .read-more2{
+            display: block;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 2rem;
+            margin-lef: 10rem;
+            color: var(--text-black);
+            padding: .8rem 1rem;
+            cursor: pointer;
+
+        }
+
+        footer{
+            text-align: start;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            color: var(--text-black);
+            padding: 3rem 0;
+            border: 3px solid var(--text-black);
+            background-color: var(--background-color);
+
+        }
+        footer p{
+            margin-left: 2rem;
+        }
+        
+        
+
+        
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="card-container">
+            <div class="vertical-line1"></div>   
+            <div class="vertical-line2"></div>   
+            <div class="flex-card">
+                <div class="card-content-1">
+                    <h1> Game Developer <br>(Ahmed) </h1>  
+                    <img src="https://i.pinimg.com/736x/ba/d7/86/bad786dfe4f227555be6fa2484b0b9a3.jpg" alt="project-icon" class="icon">
+                    <h2>What's a Game Developer</h2>
+                    <p>a software developer specializing <br> in the creation of video games</p>
+                    <button class="read-more">Read More...</button>
+                    <button class="view-project">View projects</button>
+                    <logo-icons class="logo-icons1" ><img src="./images/game 1.png">
+                </div>
+                <div class="card-content-2">
+                    <h1>Web Developer <br> (Muno)</h1>
+                    <img src="https://img.freepik.com/premium-vector/woman-profile-cartoon_18591-58480.jpg" alt="project-icon" class="icon">
+                    <h2>What's a Web Developer</h2>
+                    <p>professionals who design, build, <br>and maintain websites and web applications</p>
+                    <button class="read-more">Read More...</button>
+                    <button class="view-project">View projects</button>
+                    <logo-icons class="logo-icons2" ><img src="./images/icons8-resume-website-94.png">
+                </div>
+                <div class="card-content-3">
+                    <h1>App Developer <br> (Hirsi)</h1>
+                    <img src="https://i.pinimg.com/736x/b1/88/c6/b188c6801ad1d71d3c962c6e4aa2d0cf.jpg" alt="project-icon" class="icon">
+                    <h2>What's a App Developer</h2>
+                    <p>professionals who design, build and maintain <br>software applications such as tablet, phone</p>
+                    <button class="read-more">Read More...</button>
+                    <button class="view-project">View projects</button>
+                    <logo-icons class="logo-icons3" ><img src="./images/icons8-smartphone-50.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="text-container">
+            <div class="flex-text-box">
+                <div class="text-content">
+                    <h1>News</h1>
+                    <div class="horizontal-line"></div>
+                    <h2><i class="fa-solid fa-gamepad"></i> 13/2/2025</h2>
+                    <p>A game developer still be a good career choice around 2025 
+                        the landscape continues to evolve at a breakneck pace, 
+                        how audiences engage with media and how marketers 
+                         approach their strategies</p>
+                    <h2><i class="fa-solid fa-globe"></i> 22/12/2024</h2>
+                    <p>3 Web Development Trends for 2025:<br>
+                        1:Low-code/no-code platforms will accelerate time-to-market
+                        2:Programming languages will evolve to meet modern demands<br>
+                        3:AI & machine learning will become integral to web development
+                    </p>
+                    <button class="news1">All News</button>
+                    <button class="news2">News Feed</button>
+                
+                </div>
+
+
+                <div class="text-content">
+                    <h1>Welcome</h1>
+                    <div class="horizontal-line"></div>
+                    <p>Welcome on board! We are excited you are joining Al hilaac and the registration team.
+                         The entire team is delighted to have a new member.
+                          We are looking forward to working with you and helping you grow in your new role.
+                          We are confident that your skills and experience will be a great asset to our team.
+                         I'm confident [recent education, skills and unique experience
+                            you bring to the table] will help us achieve our goals.
+                            We are looking forward to working with you and helping you grow in your new role.
+                            We are confident that your skills and experience
+                          will be valuable in helping you achieve your goals.</p>
+                    <button class="read-more2">Read More...</button>      
+                    
+                </div>
+
+                <div class="text-content">
+                    <h1>Services</h1>
+                    
+                    <div class="horizontal-line"></div>
+                    <div class="service-name">
+                        <h2><img src="https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/0ef25b-calender/front/400/color.webp" class="log1"> Software Development</h2>
+                        
+                        <p>We create a softwares and improve existing software applications and 
+                            design and write the code used to build everything from operating systems to mobile apps to video games.</p>
+                                
+                    </div>            
+                    <div class="service-name">
+                        <h2><img src="https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/5f20be-computer/front/400/color.webp" class="log2"> IT Support</h2>
+                        <p>we Assist users in troubleshooting common computer issues or concerns.
+                             Reply to requests for IT services, repairs and full support</p>
+                             
+                    </div>            
+                    <div class="service-name">
+                        <h2><img src="https://bvconuycpdvgzbvbkijl.supabase.co/storage/v1/object/public/sizes/8924a0-mail/front/400/color.webp" class="log3"> customer service</h2>
+                        <p>Our Company support, assistance, and advice the customers,
+                             before and after they purchase or use products or services</p>
+                     
+                           
+                    </div>       
+                    
+                </div>
+                
+
+
+            </div>
+
+        </section>
+        <footer>
+            <p>Desing by Mohamed |Copyright 2025|All rights reserved. <br></p>
+        </footer>
+    </main>
+    
+</body>
+</html>

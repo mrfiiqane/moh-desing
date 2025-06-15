@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root{
+            --primary-color: #FFE2E2;
+            --secondary-color: #7B4019;
+            --thirty-color: #3d00e6;
+            --accent-color: #FFEEA9;
+            --background-color: #fdfdfd;
+            --text-black: black;
+            --text-white: white;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            line-height: 1.6;
+            background-color:var(--background-color);
+          
+        }
+        .card{
+            width: 550px;
+            height: 580px;
+            background-color: var(--background-color);
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid var(--secondary-color);
+            box-shadow: 0 4px 10px var(--primary-color);
+            border: 50px;
+            margin: 5rem 5rem;
+            padding: 2rem 5rem;
+        }
+        a{
+            text-align: center;
+            color: var(--text-black);
+            text-decoration: none;
+            list-style: none;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+
+        }
+        h1{
+            text-align: center;
+            color: var(--text-black);
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-decoration: none;
+            list-style: none;
+            font-weight: 600;
+        }
+        p{
+            text-align: center;
+            color: var(--text-black);
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+        .desin1{
+            width: 80%;
+            height: 10%;
+            margin: 1rem auto;
+            padding: .5rem 1rem;
+            border: 2px solid var(--background-color);
+            box-shadow: 0 4px 10px var(--primary-color);
+            text-align: center;
+            cursor: pointer;
+        }
+        .desin2{
+            width: 80%;
+            height: 10%;
+            margin: 1rem auto;
+            padding: .5rem 1rem;
+            border: 2px solid var(--background-color);
+            box-shadow: 0 4px 10px var(--primary-color);
+            text-align: center;
+            cursor: pointer;
+        }
+        .desin1:hover{
+            transform: scale(1.1);
+            transition: transform 0.4s ease-in;
+        }
+        .desin2:hover{
+            transform: scale(1.1);
+            transition: transform 0.4s ease-in;
+        }
+        .card:hover{
+            box-shadow: 0 8px 20px var(--primary-color);
+            transform: scale(1.05);
+            transition: box-shadow 0.4s ease-in;
+            transition: transform 0.5s ease-in;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <h1>Hello! Welcome  </h1>
+        <p>Desing to Code choose one</p>
+
+        <div class="desin1">
+            <a href="./desing-1.html"><h1>desing 1</h1></a>
+        </div>
+        <div class="desin2">
+            <a href="./desing2.html"><h1>desing 2</h1></a>
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>
