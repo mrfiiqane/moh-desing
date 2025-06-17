@@ -45,7 +45,6 @@
             justify-content: center;
             margin: 1rem auto;
             padding: 4rem 3rem;
-            border: 8px;
             gap: 10rem;
             
         }
@@ -149,7 +148,7 @@
             cursor: pointer;
         }
         .view-project{
-            border: 8px;
+            border: 2px solid white;
             font-size: 14px;
             border-radius: 8px;
             padding: .8rem 1rem;
@@ -269,10 +268,11 @@
             font-size: 14px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             margin-top: 2rem;
-            margin-lef: 10rem;
+     
             color: var(--text-black);
             padding: .8rem 1rem;
             cursor: pointer;
+         
 
         }
         
@@ -289,6 +289,132 @@
         footer p{
             margin-left: 2rem;
         }
+        footer a{
+            text-align: start;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            color: var(--text-black);
+            padding: 3rem 0;
+            border: 3px solid var(--text-black);
+            background-color: var(--background-color);
+            margin-left: 2rem;
+
+        }
+        @media (max-width: 768px) {
+            .card-container{
+                width: 330px;
+                height: auto;
+                
+                
+            }
+            .flex-card{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 95%;
+                height: auto;
+                margin: 0.7rem auto;
+            }
+            .flex-card h1{
+                font-size: 1.8rem;
+            } 
+            .flex-card h2{
+                font-size: 1.4rem;
+            } 
+            .flex-card p{
+                font-size: 0.9rem;
+            } 
+            .card-container img{
+                width: 150px;
+                height: 150px;
+            }
+            .read-more, .view-project{
+                font-size: 0.6rem;
+                padding: 0.8rem 0.8rem;
+                margin: 1rem auto;
+
+            }
+            .vertical-line1{
+                visibility: hidden;
+            }
+            .vertical-line2{
+                visibility: hidden;
+            }
+            .text-container{
+                width: 95%;
+                height: auto;
+                margin: 0.7rem auto;
+
+            }
+            .flex-text-box{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-width: 300px;
+                width: 100%;
+                height: auto;
+                margin: 0.2rem 0;
+                padding: 2rem 1rem;
+                
+                
+            }
+            .text-content{
+                padding: .2rem;
+                margin: .2rem auto;
+                width: 300px;
+                height: auto;
+                
+                
+            }
+            .text-content h1{
+                font-size: 1rem;
+                text-align: start;
+            }
+            .text-content h2{
+                font-size: 0.7rem;
+                text-align: start;
+            }
+            .text-content p{
+                font-size: 0.5rem;
+                
+                text-align: start;
+            }
+            .text-container button{
+                font-size: 0.6rem;
+                padding: 0.8rem 0.8rem;
+                margin: 1rem auto;
+
+            }
+
+            .text-content p{
+                position: absolute;
+                right: auto;
+                left: auto;
+                top: auto;
+                bottom: auto;
+                width: 300px;
+                height: auto;
+                text-align: start;
+            }
+
+
+      
+
+            .horizontal-line{ 
+                width: 330px;
+                height: 4px;
+                background-color: black;
+                margin-bottom: 0.7rem;
+
+            }
+
+            .footer{
+                width: 100%;
+                height: auto;
+                margin: 1rem 0;
+            }
+            
+        }
         
 
         
@@ -304,7 +430,7 @@
             <div class="vertical-line2"></div>   
             <div class="flex-card">
                 <div class="card-content-1">
-                    <h1>Game Developer <br> (Ahmed) </h1>
+                    <h1>Game Developer <span>(Mahamed) </span> </h1>
                     <img src="./images/3dicons-boy-front-color.png" alt="project-icon" class="icon">
                     <h2>What's a Game Developer</h2>
                     <p>a software developer specializing <br> in the creation of video games</p>
@@ -312,7 +438,7 @@
                     <button class="view-project">View projects</button>
                 </div>
                 <div class="card-content-2">
-                    <h1>Web Developer <br> (Muno)</h1>
+                    <h1>Web Developer <span> (Muno)</span></h1>
                     <img src="./images/3dicons-girl-front-color.png" alt="project-icon" class="icon">
                     <h2>What's a Web Developer</h2>
                     <p>professionals who design, build, <br>and maintain websites and web applications</p>
@@ -320,7 +446,7 @@
                     <button class="view-project">View projects</button>
                 </div>
                 <div class="card-content-3">
-                    <h1>App Developer <br> (Hirsi)</h1>
+                    <h1>App Developer <span> (Hirsi)</span></h1>
                     <img src="./images/3dicons-boy-front-color.png" alt="project-icon" class="icon">
                     <h2>What's a App Developer</h2>
                     <p>professionals who design, build and maintain <br>software applications such as tablet, phone</p>
@@ -400,6 +526,7 @@
 
         <footer>
             <p>Desing by Mohamed |Copyright 2025|All rights reserved. <br></p>
+            <a href="./index.html">go back!.</a>
         </footer>
     </main>
     
